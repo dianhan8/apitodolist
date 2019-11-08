@@ -7,6 +7,10 @@ const category = require('./models').category
 
 app.use(bodyparser.json())
 
+app.get('/',(req, res)=>{
+    res.send('hello')
+})
+
 app.get('/todos',(req, res)=>{
     todos.findAll()
     .then(function(result){
@@ -50,8 +54,13 @@ app.patch('/todo/checked:id',(req, res)=>{
     })
 })
 app.delete('/todo/:id', (req, res)=>{
-    todos.delete({
+    todos.destroy({
         where: {id: req.params.id}
+    })
+    .then(function(result){
+        res.send({
+            message: 'Delete Success'
+        })
     })
 })
 
