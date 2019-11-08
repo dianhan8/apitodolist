@@ -16,10 +16,10 @@
     "operatorsAliases": false
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
+    "username": "gX6viBLHxZ",
+    "password": "Hogif5TC7L",
+    "database": "gX6viBLHxZ",
+    "host": "remotemysql.com",
     "dialect": "mysql",
     "operatorsAliases": false
   }
