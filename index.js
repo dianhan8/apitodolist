@@ -39,7 +39,7 @@ app.patch('/todo/:id',(req, res)=>{
         })
     })
 })
-app.patch('/todo/checked:id',(req, res)=>{
+app.patch('/todo/checked/:id',(req, res)=>{
     const id = req.params.id
     todos.update({
         isDone: req.body.isDone
